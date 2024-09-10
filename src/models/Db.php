@@ -15,7 +15,7 @@ class Db {
         return self::$instance;
     }
 
-    public static function disconnect(){
+    public function disconnect(){
         self::$instance = null;
     }
 

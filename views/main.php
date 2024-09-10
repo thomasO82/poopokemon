@@ -31,10 +31,10 @@
         <section>
             <h3>Pokerandom</h3>
             <article>
-                <h4><?= $pokeRandom["name"]?></h4>
+                <h4><?= $randomPoke->getName()?></h4>
                 <form action="/" method="POST">
                     <?php if($randomPoke->getIsCaptured() == 0): ?>
-                    <button type="submit" name="capture" value="<?= $randomPoke->getId()?>">Capturer</button>
+                    <button type="submit" name="capture" value="<?= $randomPokey->getId()?>">Capturer</button>
                     <?php endif ?>
                     <button type="submit" name="chill" value="chill">Laisser tranquile</button>
                 </form>
